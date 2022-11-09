@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Tiền Tệ</title>
+</head>
+<body>
+<input type="text" id='Dauvao'>
+<select name= "" id='select1'>
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<select name= "" id='select2'>
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<button onclick="lamgido()">Convert</button>
+<script>
+function lamgido() {
+    let giatrivao = document.getElementById('Dauvao').value;
+    let select1 = document.getElementById('select1').value;
+    let select2= document.getElementById('select2').value;
+    if (select1 == select2){
+        alert(giatrivao);
+    }
+    if (select1 == "a" && select2 == "b") {
+        alert(giatrivao/23000);
+    }
+    if (select1 == "b" && select2 == "a") {
+        alert(giatrivao*23000);
+    }
+}
+</script>
+</body>
+</html>
